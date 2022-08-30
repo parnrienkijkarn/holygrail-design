@@ -1,0 +1,90 @@
+/* Start coding here */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2b8b8b;
+  height: 20%;
+}
+
+.mid-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #f77f50;
+  height: 60%;
+  border: 1px solid white;
+}
+
+.content,
+.navigation,
+.advertisement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.content {
+  border-right: 1px solid white;
+  border-left: 1px solid white;
+  width: 60%;
+}
+
+.navigation,
+.advertisement {
+  width: 20%;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #efe68b;
+  height: 20%;
+}
+
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header,
+  .footer {
+    height: 20%;
+  }
+  .mid-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navigation {
+    width: 100%;
+    height: 15%;
+  }
+
+  .content {
+    height: 50%;
+    width: 100%;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-right: 0px solid white;
+    border-left: 0px solid white;
+  }
+
+  .advertisement {
+    width: 100%;
+    height: 15%;
+  }
+}
